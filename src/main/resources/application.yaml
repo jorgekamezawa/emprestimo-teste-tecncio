@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "123Qred - Emprestimo"
+  datasource:
+    url: jdbc:h2:mem:emprestimo
+    driver: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2
